@@ -3,6 +3,9 @@ $navbar-default-bg: #3F51B5;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+  color: #C51162;
+}
 #logo{
   float: left;
   font-size: 1.7em;
@@ -32,12 +35,35 @@ $navbar-default-bg: #3F51B5;
   margin-bottom: 50px;
   text-align: center;
 }
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  
+}
+.article-title a{
+  color: #9C27B0;
+}
+
+.article-title a:hover {
+  text-decoration: none;
+  color: #4A148C;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .article-description {
   margin-top: 0;
 }
 .article-actions {
+  margin-top: 10px;
   border-top: 1px solid #eaeaea;
   padding-top: 10px;
+
   }
 
 .footer small{
