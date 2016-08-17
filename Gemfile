@@ -16,6 +16,9 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+#pagination
+gem 'will_paginate', '~> 3.1.0'
+gem 'bootstrap-will_paginate', '0.0.10'
 # Using secure password
 gem 'bcrypt', '~> 3.1.7'
 # Use jquery as the JavaScript library
