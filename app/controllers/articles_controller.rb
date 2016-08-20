@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     # Just diplaying parameters
     # render plain: params[:article].inspect
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     if @article.save
       # Redirect to "Article path" PREFIX article and needs the id - passing @article
       flash[:success] = "Article was successfully created"
