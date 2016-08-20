@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   get 'signup', to: 'users#new'
+
   # post 'users', to: 'users#create'
   resources :users, except: [:new]
   resources :articles
+
+  get 'login', to: 'sessions#new'
+  # Post login is the creare action from sessions controller
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 end
