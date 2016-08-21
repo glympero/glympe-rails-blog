@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :articles
+  has_many :articles, dependent: :destroy
   # make email before added to db, downcase
   before_save { self.email = email.downcase }
 
