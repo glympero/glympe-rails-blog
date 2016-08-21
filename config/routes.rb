@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # Post login is the creare action from sessions controller
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
+
+  resources :categories, except: [:destroy]
 end
