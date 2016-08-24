@@ -55,7 +55,7 @@ class ArticlesController < ApplicationController
 
     def article_params
       # ALLOWING THESE PARAMETERS FOR ARTICLE TO BE PASSED IN A FORM
-      params.require(:article).permit(:title, :description)
+      params.require(:article).permit(:title, :description, category_ids: [])
     end
 
     def require_same_user
